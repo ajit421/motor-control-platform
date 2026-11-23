@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "kicad": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--python",
+        "3.14",
+        "kicad-mcp-pro==4.16.0",
+        "--transport",
+        "stdio"
+      ],
+      "env": {
+        "KICAD_MCP_KICAD_CLI": "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "KICAD_MCP_PROFILE": "default",
+        "KICAD_MCP_OPERATING_MODE": "readonly",
+        "KICAD_MCP_WORKSPACE_ROOT": "."
+      }
+    },
+    "jlcpcb-search": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--python",
+        "3.14",
+        "--from",
+        "jlcpcb-search-mcp==1.2.1",
+        "jlcpcb-mcp"
+      ],
+      "env": {}
+    }
+  }
+}

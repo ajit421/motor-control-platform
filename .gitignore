@@ -1,0 +1,38 @@
+# KiCad: backups, caches, locks, per-user view state
+*-backups/
+_autosave-*
+\#auto_saved_files\#
+fp-info-cache
+*.lck
+~*.lck
+*.kicad_prl
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+# kicad-check.sh output (re-generated on demand); release outputs live in production/
+docs/reports/kicad-check/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Firmware / web builds
+build/
+.pio/
+node_modules/
+dist/
+.venv/
+__pycache__/
+
+# Secrets
+.env
+.env.*
+!.env.example
+.mcp.local.json
+.claude/settings.local.json
+
+# kicad MCP report output (written even in readonly mode)
+hardware/*/output/
+# KiCad 10 local history (contains its own nested .git)
+.history/
